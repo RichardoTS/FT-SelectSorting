@@ -14,16 +14,22 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <h2>Original</h2>
+      <input type="text" id="inpt" />
+      <button class="btn btn-dark" id="btnDraw">Draw</button>
+      <button class="btn btn-light" id="btnSort">Sort</button>
+      <button class="btn btn-danger p-1" id="btnClear">Clear</button>
+      <button onClick="window.location.reload()" class="btn btn-success p-1">
+        Refresh
+      </button>
+
+      <div class="container-fluid d-flex " id="crdContainer"></div>
+
+      <div>
+        <h3>Select Sort Log:</h3>
       </div>
+
+      <div id="crdLog"></div>
     </div>
   </body>
 </html>
