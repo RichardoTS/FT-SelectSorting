@@ -104,12 +104,19 @@ const selectSort = arr => {
   crdLog.innerHTML = "";
 
   let min = 0;
+  let counter = 0;
   while (min < arr.length - 1) {
     for (let i = min + 1; i < arr.length; i++) {
       if (arr[min].value > arr[i].value) {
         let aux = arr[min];
         arr[min] = arr[i];
         arr[i] = aux;
+
+        const h5 = document.createElement("h5");
+        h5.classList = "d-flex";
+        h5.innerHTML = counter;
+        crdLog.appendChild(h5);
+        counter++;
 
         let row = drawRow(arr);
         crdLog.appendChild(row);
